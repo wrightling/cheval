@@ -11,4 +11,11 @@ cd .. && \
 rm -rf  ImageMagick* && \
 ldconfig /usr/local/lib
 
+RUN mkdir /chevalspree
+WORKDIR /chevalspree
+COPY Gemfile /chevalspree/Gemfile
+COPY Gemfile.lock /chevalspree/Gemfile.lock
+RUN bundle install
+COPY . /chevalspree
+
 LABEL com.wrightling.maintainer="warren@thewrightangle.com"
