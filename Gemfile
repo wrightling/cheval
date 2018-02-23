@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'spree', '~> 3.4'
-gem 'spree_auth_devise', '~> 3.3'
+gem 'spree_auth_devise', :git => "https://github.com/spree/spree_auth_devise.git", :branch => "master"
 gem 'spree_gateway', '~> 3.3'
 
 # Use Capistrano for deployment
