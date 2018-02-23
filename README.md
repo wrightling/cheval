@@ -1,24 +1,9 @@
-# README
+# CHEVAL Spree Store
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Docker Setup
 
-Things you may want to cover:
+The Dockerfile for this rails app will install the Spree prerequisites from Spree's [getting started guide](https://guides.spreecommerce.org/developer/getting_started_tutorial.html#creating-the-rails-application) - rails, bundler, image magick.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+docker-compose build
+```
